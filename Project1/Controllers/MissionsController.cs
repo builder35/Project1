@@ -10,15 +10,16 @@ namespace Project1.Controllers
     {
         // GET: Missions
         
-      
+      //Method for the Mission select view
         public ActionResult Mission(string mission)
         {
             return View();
         }
-       
+       //Method for the missions FAQ view
         public ActionResult _____MissionFAQ(string mission)
         {
             
+            //Returns different information to the view based on the mission the user selects
             switch(mission)
             {
                 case "cdn":
