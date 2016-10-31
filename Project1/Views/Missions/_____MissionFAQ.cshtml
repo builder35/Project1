@@ -1,0 +1,127 @@
+﻿
+@{
+    
+    
+    ViewBag.Title = "FAQ";
+    
+}
+<div class="jumbotron" style=" background-size: 110% 200%;">
+    <h1 class="text-left ">@ViewBag.missionName</h1>
+</div>
+<div class="container">
+
+    <ol class="breadcrumb">
+        <li><a href="../Home">Home</a></li>
+        <li><a href="../Missions/Mission">Select Mission</a></li>
+        <li class="active">@ViewBag.missionName</li>
+    </ol>
+</div>
+
+
+
+    <h3 class="text-center page-header">Mission Info</h3>
+    
+   
+
+<div class="container-fluid">
+    <div class="figure-box">
+        <div class="logo">
+            <img src="@ViewBag.missionSymbol" alt="missionSymbol" />
+        </div>
+
+        <table>
+
+            <tr>
+                <td class="orange-text">Mission President:</td>
+                <td>@ViewBag.missionPresident</td>
+            </tr>
+            <tr>
+                <td rowspan="5" style="line-height:24px;" class="orange-text"><br /> Mailing Address:</td>
+                <td>
+                    @ViewBag.missionAddress
+                    <br />
+                    @ViewBag.missionStreet
+                    <br />
+                    @ViewBag.missionStateCityZip
+                    <br />
+                    @ViewBag.missionCountry
+                </td>
+
+
+            </tr>
+            <tr>
+                <td class="orange-text">Mission Language(s):</td>
+                <td>@ViewBag.missionLanguages</td>
+            </tr>
+            <tr>
+                <br />
+                <td style="line-height:50px;"  rowspan="2" class="orange-text">Regional Climate:</td>
+                <td>@ViewBag.missionClimate</td>
+            </tr>
+
+            <tr>
+                <td class="orange-text">Dominate Religion:</td>
+                <td>@ViewBag.missionDominateReligion</td>
+            </tr>
+
+        </table>
+    </div>
+    <h3 class="text-center page-header">Ask A Question</h3>
+    <form action="" id="question-submit" method="post">
+        <div>
+            <textarea></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn bg-primary">Submit</button>
+        </div>
+    </form>
+</div>
+<h3 class="text-center page-header">Frequently Asked Questions</h3>
+<div class="container-fluid">
+    <div data-toggle="collapse" class="question" data-target="#Q1"><p> Q:What was your most spiritual experience?<small>(Click to Answer)</small></p></div>
+
+    <div id="Q1" class="collapse">
+        <form action="" id="question-submit" method="post">
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn bg-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <div data-toggle="collapse" class="question" data-target="#Q2"><p>Q:What are some interesting facts about the Denver North Mission?<small>(Click to Answer)</small></p></div>
+
+    <div id="Q2" class="collapse">
+        <form action="" id="question-submit" method="post">
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn bg-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <div data-toggle="collapse" class="question" data-target="#Q3"><p> Q:Any packing/clothing advice?<small>(Click to Answer)</small></p></div>
+
+    <div id="Q3" class="collapse">
+        <form action="" id="question-submit" method="post">
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn bg-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br />
+        
+</div>
+      
+                
+    
+
+    
+    
